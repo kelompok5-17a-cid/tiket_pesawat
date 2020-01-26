@@ -7,36 +7,39 @@
                         <div class="panel-body">
                 <form action="<?php echo $action ?>" method="post">
                     <input type="text" name="no_identitas" value="<?php echo $no_identitas ?>" readonly hidden>
-                        <label>Nama Konsumen</label>
-                        <input type="text" name="nama_konsumen" class="form-control" value="<?php echo $nama_konsumen ?>">
-                        <label>Alamat Konsumen</label>
-                        <input type="text" name="alamat_konsumen" class="form-control" value="<?php echo $alamat_konsumen ?>">
-                        <label>Telepon</label>
+
+                        <label>Kode Tujuan</label>
+                        <input type="text" name="kode_tujuan" class="form-control" value="<?php echo $kode_tujuan ?>">
+                        <label>Kota Tujuan</label>
+                        <input type="text" name="kota_tujuan" class="form-control" value="<?php echo $kota_tujuan ?>">
+<!--                         <label>Telepon</label>
                         <input type="text" name="telp" class="form-control" value="<?php echo $telp ?>">
                         <label>Umur</label>
                         <input type="text" name="umur" class="form-control" value="<?php echo $umur?>">
                         <label>Jenis Kelamin</label>
-                        <select name="jenis_kelamin" class="form-control">
-                            <?php 
-                            switch ($jenis_kelamin) {
-                                case 'L': ?>
-                                <option value="L" selected>Laki - Laki</option>
-                                <option value="P">Perempuan</option>
+                        <select name="jenis_kelamin" class="form-control"> -->
+<!--                             <?php 
+                            switch ($no_tujuan) {
+                                case 'D': ?>
+                                <option value="D" selected>D001</option>
+                                <option value="D">D001</option>
                                 <?php break;
-                                case 'P': ?>
-                                <option value="L">Laki - Laki</option>
-                                <option value="P" selected>Perempuan</option>
+                                case 'D': ?>
+                                <option value="D">D002</option>
+                                <option value="D" selected>D002</option>
                                 <?php break; 
                                 default: ?>
-                                <option value="L">Laki - Laki</option>
-                                <option value="P">Perempuan</option>
+                                <option value="D">D001</option>
+                                <option value="D">D002</option>
                                 <?php break;
-                            } ?>
-                        </select>
+                            } ?> -->
+                       <!--  <label>Kota Tujuan</label>
+                        <input type="text" name="kota_tujuan" class="form-control" value="<?php echo $kota_tujuan ?>"> -->
+<!--                         </select>
                         <label>Tempat Lahir</label>
                         <input type="text" name="tmpt_lahir" class="form-control" value="<?php echo $tmpt_lahir ?>">
                         <label>Tanggal Lahir</label>
-                        <input type="date" name="tanggal" class="form-control" value="<?php echo $tanggal ?>">
+                        <input type="date" name="tanggal" class="form-control" value="<?php echo $tanggal ?>"> -->
                         <div style="margin: 10px;"></div>
                         <button type="submit" class="btn btn-primary">Simpan Data</button>
                     </form>
