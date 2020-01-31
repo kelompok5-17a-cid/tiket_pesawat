@@ -11,7 +11,7 @@ class Tujuan extends CI_Controller{
         $data = array(
             'title' => 'TIKET PESAWAT',
             'title2' => 'Tujuan',
-            'konsumen' => $this->m_tujuan->list(),
+            'tujuan' => $this->m_tujuan->list(),
             'isi'   => 'admin/v_tujuan'
         );
         $this->load->view('admin/layout/v_wrapper',$data,FALSE);

@@ -14,31 +14,29 @@
                                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                                 <thead>
                                                     <tr>
-                                                        <th>No Identitas</th>
-                                                        <th>Kode Tujuan</th>
-                                                        <th>Kota Tujuan</th>
-<!--                                                         <th>Telp</th> -->
-<!--                                                         <th>Umur</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th>Tempat Lahir</th>
-                                                        <th>Tanggal</th>
- -->                                                        <th>Action</th>
+                                                        <th>Id Pembayaran</th>
+                                                        <th>Kode Pembayaran</th>
+                                                        <th>Kode Tiket</th>
+                                                        <th>Tanggal Pembayaran</th>
+                                                        <th>Jumlah Tiket</th>
+                                                        <th>Harga Tiket</th>
+                                                        <th>Total Pembayaran</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                <?php $no=1; foreach ($tujuan as $key => $value){ ?>
+                                                <?php $no=1; foreach ($pembayaran as $key => $value){ ?>
                                                     <tr>
                                                     <td> <?= $no++ ?> </td>
-                                                    <td> <?= $value->kode_tujuan ?> </td>
-                                                    <td> <?= $value->kota_tujuan ?> </td>
-<!--                                                     <td> <?= $value->telp ?> </td>
-                                                    <td> <?= $value->umur ?> </td>
-                                                    <td> <?= $value->jenis_kelamin ?> </td>
-                                                    <td> <?= $value->tmpt_lahir ?> </td>
-                                                    <td> <?= $value->tanggal ?> </td> -->
+                                                    <td> <?= $value->kode_pembayaran ?> </td>
+                                                    <td> <?= $value->kode_tiket ?> </td>
+                                                    <td> <?= $value->tgl_pembayaran ?> </td>
+                                                    <td> <?= $value->jumlah_tiket ?> </td>
+                                                    <td> <?= $value->harga_tiket ?> </td>
+                                                    <td> <?= $value->total_pembayaran ?> </td>
                                                     <td>
-                                                    <a href="<?php echo base_url('tujuan/edit/'.$value->no_identitas)?>" class="btn btn-xs btn-success"><i class="fa fa-edit"></i>Edit</a>
-                                                    <a href="<?php echo base_url('tujuan/delete/'.$value->no_identitas) ?>" class="btn btn-xs btn-danger"><i class="fa fa-remove"></i>Delete</button>
+                                                    <a href="<?php echo base_url('pembayaran/edit/'.$value->id_pembayaran)?>" class="btn btn-xs btn-success"><i class="fa fa-edit"></i>Edit</a>
+                                                    <a href="<?php echo base_url('pembayaran/delete/'.$value->id_pembayaran) ?>" class="btn btn-xs btn-danger"><i class="fa fa-remove"></i>Delete</button>
                                                     </td>
                                                     </tr>
                                                 <?php } ?>

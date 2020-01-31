@@ -8,7 +8,8 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Tiket Pesawat - <?= $title ?></title>
+        <title>Tiket Pesawat - Sign in to beranda</title>
+
 
         <!-- Bootstrap Core CSS -->
         <link href="<?= base_url() ?>template/admin/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +37,7 @@
                 <div class="col-md-4 col-md-offset-4">
                     <div class="login-panel panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title"><?= $title ?></h3>
+                            <h3 class="panel-title">Sign in</h3>
                         </div>
                         <div class="panel-body">
                             <?php
@@ -65,7 +66,7 @@
                                         </div> 
                                     <div class="col-sm-12 text-center">
                                     <button type="submit" class="btn btn-success">Login</button>
-                                    <a class="btn btn-primary" href="<? base_url() ?>">tampilan</a>
+                                    <a class="btn btn-primary" href="<? base_url('tampilan') ?>">tampilan</a>
                                     </div>
                                 </fieldset>
                             <? echo form_close();?>

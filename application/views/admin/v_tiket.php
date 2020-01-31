@@ -15,30 +15,24 @@
                                                 <thead>
                                                     <tr>
                                                         <th>No Identitas</th>
+                                                        <th>Kode Tiket</th>
+                                                        <th>Tanggal Berangkat</th>
+                                                        <th>Waktu Berangkat</th>
                                                         <th>Kode Tujuan</th>
-                                                        <th>Kota Tujuan</th>
-<!--                                                         <th>Telp</th> -->
-<!--                                                         <th>Umur</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th>Tempat Lahir</th>
-                                                        <th>Tanggal</th>
- -->                                                        <th>Action</th>
+                                                        <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                <?php $no=1; foreach ($tujuan as $key => $value){ ?>
+                                                <?php $no=1; foreach ($tiket as $key => $value){ ?>
                                                     <tr>
                                                     <td> <?= $no++ ?> </td>
+                                                    <td> <?= $value->kode_tiket ?> </td>
+                                                    <td> <?= $value->tgl_berangkat ?> </td>
+                                                    <td> <?= $value->waktu_berangkat ?> </td>
                                                     <td> <?= $value->kode_tujuan ?> </td>
-                                                    <td> <?= $value->kota_tujuan ?> </td>
-<!--                                                     <td> <?= $value->telp ?> </td>
-                                                    <td> <?= $value->umur ?> </td>
-                                                    <td> <?= $value->jenis_kelamin ?> </td>
-                                                    <td> <?= $value->tmpt_lahir ?> </td>
-                                                    <td> <?= $value->tanggal ?> </td> -->
                                                     <td>
-                                                    <a href="<?php echo base_url('tujuan/edit/'.$value->no_identitas)?>" class="btn btn-xs btn-success"><i class="fa fa-edit"></i>Edit</a>
-                                                    <a href="<?php echo base_url('tujuan/delete/'.$value->no_identitas) ?>" class="btn btn-xs btn-danger"><i class="fa fa-remove"></i>Delete</button>
+                                                    <a href="" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i>Edit</a>
+                                                    <a href="" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Delete</a>
                                                     </td>
                                                     </tr>
                                                 <?php } ?>

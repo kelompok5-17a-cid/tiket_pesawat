@@ -51,10 +51,10 @@
                                     <a href="#"><i class="fa fa-ticket"></i> Tiket<span class="fa arrow"></span></a>
                                     <ul class="nav nav-second-level">
                                         <li>
-                                            <a href="panels-wells.html">Data Tiket</a>
+                                            <a href="<?= base_url('tiket/add/') ?>">Data Tiket</a>
                                         </li>
                                         <li>
-                                            <a href="buttons.html">Lihat Data Tiket</a>
+                                            <a href="<?= base_url('tiket/') ?>">Lihat Data Tiket</a>
                                         </li>
                                         
                                     </ul>
@@ -64,10 +64,10 @@
                                     <a href="#"><i class="fa fa-money"></i> Pembayaran<span class="fa arrow"></span></a>
                                     <ul class="nav nav-second-level">
                                         <li>
-                                            <a href="#">Data Pembayaran</a>
+                                            <a href="<?= base_url('pembayaran/add/') ?>">Data Pembayaran</a>
                                         </li>
                                         <li>
-                                            <a href="#">Lihat Data Pembayaran</a>
+                                            <a href="<?= base_url('pembayaran/') ?>">Lihat Data Pembayaran</a>
                                         </li>
                                         
                                             </ul>

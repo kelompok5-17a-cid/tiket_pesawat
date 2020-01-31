@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>WELCOME TO JUMANJI - <?= $title ?></title>
+        <title>WELCOME TO THE WEBSITE - <?= $title ?></title>
 
         <!-- Bootstrap Core CSS -->
         <link href="<?= base_url() ?>template/admin/css/bootstrap.min.css" rel="stylesheet">
