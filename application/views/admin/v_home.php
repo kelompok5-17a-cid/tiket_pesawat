@@ -1,7 +1,14 @@
-<h3>KELOMPOK 5</h3>
-<li>
-<h4>HASAN ARIF</h4>
-<h4>JUNIA D.A</h4>
-<h4>IQBAL</h4>
-<h4>NADIA</h4>
-</li>
+ <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-comments fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">26</div>
+                                            <div>New Comments!</div>
+                                        </div>
+                                    </div>
+                                </div>

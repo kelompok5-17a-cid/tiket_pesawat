@@ -1,0 +1,1 @@
+select lpad(idcolumn,4,'0') from mytable;

@@ -31,6 +31,14 @@
                         responsive: true
                 });
             });
+
+$('.jumlah_tiket').on('keyup', function() {
+  $('.total_pembayaran').val( parseFloat($(this).val()) * parseFloat($('.harga_tiket').val()) );
+});
+$('.harga_tiket').on('keyup', function() {
+  $('.total_pembayaran').val( parseFloat($(this).val()) * parseFloat($('.jumlah_tiket').val()) );
+});
+
         </script>
 
     </body>

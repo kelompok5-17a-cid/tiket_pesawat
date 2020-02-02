@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Tiket Pesawat - Sign in to beranda</title>
+        <title>Welcome - Sign in to beranda</title>
 
 
         <!-- Bootstrap Core CSS -->
@@ -59,11 +59,11 @@
                                     <div class="form-group">
                                         <input class="form-control" placeholder="Password" name="password" type="password" required>
                                     </div>
-                                    <div class="checkbox">
+                                    <!-- <div class="checkbox">
                                         <label>
                                             <input name="remember" type="checkbox" value="Remember Me">Remember Me
                                         </label>
-                                        </div> 
+                                        </div>  -->
                                     <div class="col-sm-12 text-center">
                                     <button type="submit" class="btn btn-success">Login</button>
                                     <a class="btn btn-primary" href="<? base_url('tampilan') ?>">tampilan</a>

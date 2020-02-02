@@ -27,7 +27,7 @@ class Pembayaran extends CI_Controller{
             'id_pembayaran' => set_value('id_pembayaran'),
             'kode_pembayaran' => set_value('kode_pembayaran'),
             'kode_tiket' => set_value('kode_tiket'),
-            'tgl_pembayaran' => set_value('tgl_pembayaran'),
+            'tgl_boking' => set_value('tgl_boking'),
             'jumlah_tiket' => set_value('jumlah_tiket'),
             'harga_tiket' => set_value('harga_tiket'),
             'total_pembayaran' => set_value('total_pembayaran'),
@@ -37,12 +37,15 @@ class Pembayaran extends CI_Controller{
 
     public function processadd()
     {
-
+        $kode_pembayaran = $this->input->post('kode_pembayaran', TRUE);
+        if(empty($kode)) {
+            $kode_pembayaran = $this->db->query("select concat('D',lpad(id_pembayaran+1,4,'0')) as kode from tbl_pembayaran;")->row()->kode;
+        }
         $data = array(
             'id_pembayaran' => NULL,
             'kode_pembayaran' => $this->input->post('kode_pembayaran', TRUE),
             'kode_tiket' => $this->input->post('kode_tiket', TRUE),
-            'tgl_pembayaran' => $this->input->post('tgl_pembayaran', TRUE),
+            'tgl_boking' => $this->input->post('tgl_boking', TRUE),
             'jumlah_tiket' => $this->input->post('jumlah_tiket', TRUE),
             'harga_tiket' => $this->input->post('harga_tiket', TRUE),
             'total_pembayaran' => $this->input->post('total_pembayaran', TRUE),
@@ -65,7 +68,7 @@ class Pembayaran extends CI_Controller{
                 'id_pembayaran' => $row->id_pembayaran,
                 'kode_pembayaran' => $row->kode_pembayaran,
                 'kode_tiket' => $row->kode_tiket,
-                'tgl_pembayaran' => $row->tgl_pembayaran,
+                'tgl_boking' => $row->tgl_boking,
                 'jumlah_tiket' => $row->jumlah_tiket,
                 'harga_tiket' => $row->harga_tiket,
                 'total_pembayaran' => $row->total_pembayaran,
@@ -76,7 +79,7 @@ class Pembayaran extends CI_Controller{
 
     public function delete($id)
     {
-        $this->m_pembayaran>delete($id);
+        $this->m_pembayaran->delete($id);
         $this->session->set_flashdata('Pesan', 'Berhasil Menghapus Data');
         redirect(base_url('pembayaran'));
     }
@@ -87,7 +90,7 @@ class Pembayaran extends CI_Controller{
         $data = array(
             'kode_pembayaran' => $this->input->post('kode_pembayaran', TRUE),
             'kode_tiket' => $this->input->post('kode_tiket', TRUE),
-            'tgl_pembayaran' => $this->input->post('tgl_pembayaran', TRUE),
+            'tgl_boking' => $this->input->post('tgl_boking', TRUE),
             'jumlah_tiket' => $this->input->post('jumlah_tiket', TRUE),
             'harga_tiket' => $this->input->post('harga_tiket', TRUE),
             'total_pembayaran' => $this->input->post('total_pembayaran', TRUE),

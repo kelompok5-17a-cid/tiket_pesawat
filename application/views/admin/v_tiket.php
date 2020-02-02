@@ -31,8 +31,8 @@
                                                     <td> <?= $value->waktu_berangkat ?> </td>
                                                     <td> <?= $value->kode_tujuan ?> </td>
                                                     <td>
-                                                    <a href="" class="btn btn-xs btn-success"><i class="fa fa-pencil"></i>Edit</a>
-                                                    <a href="" class="btn btn-xs btn-danger"><i class="fa fa-trash"></i>Delete</a>
+                                                    <a href="<?php echo base_url('tiket/edit/'.$value->no_identitas)?>" class="btn btn-xs btn-success"><i class="fa fa-edit"></i>Edit</a>
+                                                    <a href="<?php echo base_url('tiket/delete/'.$value->no_identitas) ?>" class="btn btn-xs btn-danger"><i class="fa fa-remove"></i>Delete</button>
                                                     </td>
                                                     </tr>
                                                 <?php } ?>
