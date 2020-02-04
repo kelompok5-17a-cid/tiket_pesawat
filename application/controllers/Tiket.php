@@ -35,7 +35,10 @@ class Tiket extends CI_Controller{
 
     public function processadd()
     {
-
+        // $kode_tiket = $this->input->post('kode_tiket', TRUE);
+        // if(empty($kode)) {
+        //     $kode_tiket = $this->db->query("select concat('D',lpad(no_identitas+1,4,'0')) as kode from tbl_tiket;")->row()->kode;
+        // }
         $data = array(
             'no_identitas' => NULL,
             'kode_tiket' => $this->input->post('kode_tiket', TRUE),

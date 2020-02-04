@@ -14,6 +14,7 @@
                                     </div>
                                     <!-- /input-group -->
                                 </li>
+
                                 <li>
                                     <a href="<?= base_url('admin')?>"><i class="fa fa-home fa-fw"></i> Beranda</a>
 
@@ -125,3 +126,4 @@
                         </div>
                         <!-- /.row -->
                     </div>
+

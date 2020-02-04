@@ -91,7 +91,8 @@
 				<div class="col">
 					<div class="copyright d-flex flex-lg-row flex-column align-items-center justify-content-start">
 						<div class="cr_text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-STTBANDUNG &copy;<script>document.write(new Date().getFullYear());</script> WELCOME TO OUR WEBSITE <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">KELOMPOK 5</a>
+							<marquee direction="right" scrollamount="2" align="center"><div style="text-align:right;">
+STTBANDUNG &copy;<script>document.write(new Date().getFullYear());</script> WELCOME TO OUR WEBSITE <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">KELOMPOK 5</a></marquee>
 <!-- <marquee style=" padding-top:15%; color: #fff;  font-size: 30px; font-style: italic;">Selamat Datang di Aplikasi Penjualan Tiket Pesawat </marquee> -->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 						<!-- <div class="ml-lg-auto cr_links">
